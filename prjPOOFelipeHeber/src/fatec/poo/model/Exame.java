@@ -10,6 +10,7 @@ public class Exame {
     private String data;
     private String horario;
     private double valor;
+    //private Consulta consultas;
 
     public Exame(int codigo, String descricao) {
         this.codigo = codigo;
@@ -48,5 +49,14 @@ public class Exame {
         return descricao;
     }
     
+    /*public Consulta getConsulta() {
+        return consulta;
+    }
+    */
+    
+    /*public void setConsulta(Consulta consulta){
+        this.consulta = consulta;
+    }
+    */
     
 }

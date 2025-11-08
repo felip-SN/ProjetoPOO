@@ -11,10 +11,12 @@ public class Paciente extends Pessoa{
     private LocalDate dataNascimento;
     private double altura;
     private double peso;
+    //private ArrayList<Consulta> consultas;
 
     public Paciente(String cpf, String nome, LocalDate dataNascimento) {
         super(cpf, nome);
         this.dataNascimento = dataNascimento;
+        //consultas = new ArrayList<Consulta>();
     }
 
     public double getAltura() {
@@ -44,4 +46,10 @@ public class Paciente extends Pessoa{
     public long calcIdade(LocalDate dataNascimento){
         return ChronoUnit.YEARS.between(dataNascimento, LocalDate.now());
     }
+    
+    /*public void addConsulta(Consulta c){
+        Consulta.add(c);
+        f.setPaciente(this);
+    }
+    */
 }

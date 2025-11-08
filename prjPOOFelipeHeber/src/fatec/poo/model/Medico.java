@@ -7,11 +7,13 @@ package fatec.poo.model;
 public class Medico extends Pessoa {
     private String crm;
     private String especialidade;
+    //private ArrayList<Consulta> consultas;
 
     public Medico(String cpf, String nome, String especialidade, String crm) {
         super(cpf, nome);
         this.especialidade = especialidade;
         this.crm = crm;
+        //consultas = new ArrayList<Consulta>();
     }
 
     public String getCrm() {
@@ -22,6 +24,10 @@ public class Medico extends Pessoa {
         return especialidade;
     }
     
-    
+        /*public void addConsulta(Consulta c){
+        Consulta.add(c);
+        f.setPaciente(this);
+    }
+    */
     
 }
