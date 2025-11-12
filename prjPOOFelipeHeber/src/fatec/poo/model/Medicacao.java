@@ -15,8 +15,8 @@ public class Medicacao {
     private int qtdeDias;
     Consulta consulta;
 
-    public Medicacao(String descricao) {
-        this.nome = descricao;
+    public Medicacao(String nome) {
+        this.nome = nome;
     }
 
     public String getNome() {
